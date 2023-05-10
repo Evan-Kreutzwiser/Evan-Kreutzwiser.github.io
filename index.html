@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fenix&family=Nunito+Sans&family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="fa/css/brands.min.css" rel="stylesheet" />
+    <link href="fa/css/solid.min.css" rel="stylesheet" />
+    <title>Evan Kreutzwiser</title>
+    <meta
+      name="description"
+      content="Passionate full-stack developer and UI designer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/navbar.js" async defer></script>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div class="Nav-links" onclick="closeMenu()">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="gallery.html">Photos</a>
+      </div>
+      <button id="Menu-button" onclick="navMenu()">&#xf0c9;</button>
+    </nav>
+
+    <section id="about">
+      <div class="about-left">
+        <h1>Hi, I'm Evan Kreutzwiser<span class="caret">_</span></h1>
+        <p>
+          A passionate full-stack developer with experience in a wide range of
+          technologies and UI design
+        </p>
+        <p style="display: none">
+          I am creative and detail oriented, and can quickly excel at any
+          new technology or software a role requires.
+        </p>
+
+        <ul class="skills">
+          <p>I am</p>
+          <li>Creative</li>
+          <li>Personable</li>
+          <li>A quick learner</li>
+          <li>Tech-savvy</li>
+          <li>Detail-oriented</li>
+          <li>Adaptable</li>
+        </ul>
+      </div>
+
+      <img class="title-img" src="headshot.jpg" />
+    </section>
+
+    <section id="projects">
+      <div class="content">
+        <h2>Projects</h2>
+
+        <div class="topic">
+          <h3>QNect - Forum</h3>
+          <p>
+            A custom forum built from scratch during the QWeb development sprint
+            of winter 2023.
+          </p>
+          <p>
+            I managed a team of 5 and worked as a full-stack developer and UI/UX
+            designer. Starting with no previous web development experience I
+            learned React.JS and web technologies in the span of a few weeks,
+            quickly entering a position where I offered guidance and answered
+            technical questions for the team.
+          </p>
+          <ul class="skills">
+            <li>React.JS</li>
+            <li>HTML/CSS</li>
+            <li>UI Design</li>
+            <li>Figma</li>
+            <li>Teamwork</li>
+            <li>Express.JS</li>
+            <li>Git</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+        <div class="topic">
+          <h3>Iridium - Hobby OS</h3>
+          <p>
+            A long-running project with the goal of creating an entire operating
+            system from scratch. The project is still in its early stages, but I
+            have learned a great deal about low-level systems programing and the
+            complexity of modern operating systems.
+          </p>
+          <p>
+            The project has undergone multiple iterations, with old work
+            rewritten as I study new concepts and come up with improved plans
+            and design patterns. Over the course of multiple iterations, I have
+            successfully gotten the CPU into 64-bit mode, created a physical
+            memory allocator, interfaced with a keyboard, and scanned PCIe slots
+            for connected devices.
+          </p>
+          <ul class="skills">
+            <li>C</li>
+            <li>System Architecture</li>
+            <li>Operating Systems</li>
+            <li>Assembly</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="topic">
+          <h3>Dining Hall Discord Bot</h3>
+          <p>
+            A Discord bot that automatically posts the day's menus for the
+            Queen's University dining halls, which was used regularly by my
+            extended friend group throughout the year.
+          </p>
+          <p>
+            It was built by reverse engineering the API used by the university's
+            own dining website and formatting that data in a Discord-friendly
+            manner.
+          </p>
+          <ul class="skills">
+            <li>Python</li>
+            <li>Problem Solving</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="content">
+        <h2>Education</h2>
+
+        <div class="topic">
+          <h3>Queen's University - Bcomp-H</h3>
+          <p>Sep 2022 - Apr 2026</p>
+
+          <p>
+            Currently studying for a Bachelor of Computing Honors at Queen's
+            University. I have a 3.8 GPA and received the Principal's entrance
+            scholarship, and participated in the web development club.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Centennial CVI</h3>
+          <p>Sep 2018 - Jun 2022</p>
+
+          <p>
+            Achieved a 95% average + honor roll and participated in the robotics
+            and computer science clubs. I was also awarded the Sharon Dunsmore
+            Scholarship and received the Architectural Design award for quickly
+            learning and creatively utilizing CAD software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="content">
+        <h2>Experience</h2>
+        <div class="topic">
+          <h3>QWeb Web Development Sprint</h3>
+          <p>Queen's University, Mar 2023</p>
+          <p>
+            Developed a forum website as part of a team, as described in the
+            <a href="#projects">projects</a> list.
+          </p>
+          <p>
+            During the project I worked many roles, gaining experience in
+            full-stack development, team management, design, and managing a live
+            deployment. We faced tight deadlines and interpersonal issues, but
+            persevered and prepared a functioning and visually appealing
+            minimum viable product that cleanly handled elements where we
+            intended to add new features. Throughout the summer I am continuing
+            to polish the website and incrementally add the features that didn't
+            make the cut for the demo day.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Volunteer Landscape Maintenance</h3>
+          <p>Aberfoyle Public School, summers of 2020 & 2021</p>
+          <p>
+            Maintained school grounds and gardens throughout the summers, going
+            above and beyond to create a clean and visually appealing
+            environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="content">
+        <h2>Contact</h2>
+
+        <p>I'm available by email or text at:</p>
+
+        <ul id="contact-info">
+          <li id="email">
+            <a href="mailto:21ejk12@queensu.ca">21ejk12@queensu.ca</a>
+          </li>
+          <li id="phone"><a href="tel:+1-519-993-2992">519-993-2992</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
