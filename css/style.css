@@ -10,7 +10,7 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
@@ -19,7 +19,7 @@ body {
   background-color: #06121e;
   font-family: "Nunito Sans", sans-serif;
   color: #eee;
-  height: 100%;
+  min-height: 100%;
   padding-top: 4em;
 }
 
@@ -152,6 +152,24 @@ section {
   scroll-margin-top: 3.5em;
   padding: 3em 1em;
   width: 100%;
+  position: relative;
+}
+
+.angled-bg::before {
+  content: "";
+  background-color: #02304a;
+  transform: skewY(-2deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  box-shadow: 0 0 12px #020507;
+}
+
+.tilt-right::before {
+  transform: skewY(2deg);
 }
 
 .content {
@@ -201,40 +219,6 @@ section {
     object-fit: cover;
     transform: translateY(5%);
   }
-}
-
-#projects {
-  position: relative;
-}
-
-#projects::before {
-  content: "";
-  background-color: #02304a;
-  transform: skewY(-2deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  box-shadow: 0 0 12px #020507;
-}
-
-#experience {
-  position: relative;
-}
-
-#experience::before {
-  content: "";
-  background-color: #02304a;
-  transform: skewY(2deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  box-shadow: 0 0 12px #020507;
 }
 
 .skills {
