@@ -67,8 +67,10 @@ img {
 }
 
 video {
-    margin-top: 3em;
-    width: 100%;
+    display: block;
+    margin: 3em auto 0;
+    max-width: 100%;
+    max-height: calc(100vh - 3.5rem);
     border-radius: 16px;
     border: 2px solid #749bffcc;
     box-shadow: 1px 2px 16px 0 #62a1fe88;
