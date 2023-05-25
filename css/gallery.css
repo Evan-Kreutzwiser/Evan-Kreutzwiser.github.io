@@ -31,6 +31,22 @@
     box-shadow: 0 0 16px #0205078c;
 }
 
+#modelling {
+    position: relative;
+}
+#modelling::before {
+    content: "";
+    background-color: #02304a;
+    transform: skewY(2deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10em;
+    z-index: -1;
+    box-shadow: 0 0 12px #020507;
+  }
+
 #gallery {
     display: flex;
     position: relative;
@@ -73,4 +89,12 @@ img {
     box-shadow: 1px 2px 16px 1px #62a1feaa;
     margin: 18px 0;
     cursor: pointer;
+}
+
+video {
+    margin-top: 3em;
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid #749bffcc;
+    box-shadow: 1px 2px 16px 0 #62a1fe88;
 }
