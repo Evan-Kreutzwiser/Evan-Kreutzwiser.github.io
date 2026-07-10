@@ -14,7 +14,7 @@
     <title>Evan Kreutzwiser</title>
     <meta
       name="description"
-      content="Passionate full-stack developer and UI designer"
+      content="Passionate full-stack developer and UI designer with a wide array of interests and expertise"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
@@ -25,9 +25,9 @@
     <nav id="navbar">
       <div class="Nav-links" onclick="closeMenu()">
         <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a href="gallery.html">Gallery</a>
       </div>
@@ -36,7 +36,7 @@
 
     <section id="about">
       <div class="about-left">
-        <h1>Hi, I'm Evan Kreutzwiser<span class="caret">_</span></h1>
+        <h1><span aria-hidden="true" style="user-select: none;">&gt; </span>Hi, I'm Evan Kreutzwiser<span class="caret">_</span></h1>
         <p>
           A passionate full-stack developer with experience in a wide range of
           technologies and UI design
@@ -60,7 +60,104 @@
       <img class="title-img" src="headshot.jpg" />
     </section>
 
-    <section id="projects" class="angled-bg">
+    <section id="experience" class="angled-bg">
+      <div class="content">
+        <h2>Experience</h2>
+        <div class="topic">
+          <h3>Web Developer</h3>
+          <p>Coldwell Banker Neumann Real Estate Brokerage, Summers of 2023, 2024, & 2025</p>
+          <p>
+            Developed and maintained websites for the brokerage and many real estate agents.
+          </p>
+          <p>
+            I primarily used the Duda website builder, and applied knowledge of Javascript & CSS to create
+            custom design elements and interactive features beyond the official offerings of the platform. 
+            I utilized generative AI for copywriting, generating marketing material, and to quickly draft 
+            effective websites. Alongside web development, I also assisted in marketing tasks such as graphic 
+            design and writing SEO-tailored articles. Additionally, I developed custom integrations with outside 
+            services, utilized Google Search Console to track the effectiveness of SEO strategies, debugged 
+            wordpress installations, and managed domains, DNS records, and hosting configuration.
+          </p>
+          <ul class="skills">
+            <li>HTML/CSS</li>
+            <li>Duda Website Builder</li>
+            <li>SEO</li>
+            <li>Javascript</li>
+            <li>Graphic Design</li>
+            <li>Wordpress</li>
+            <li>Generative AI</li>
+            <li>DNS</li>
+          </ul>
+        </div>
+
+        <div class="topic">
+          <h3>QWeb Web Development Sprint</h3>
+          <p>Queen's University, Mar 2023</p>
+          <p>
+            Developed a forum website as part of a team, further described in the
+            <a href="#projects">projects</a> list.
+          </p>
+          <p>
+            I managed a team of 5 and worked as a full-stack developer and UI/UX
+            designer. Starting with no previous web development experience I
+            learned React.JS and web technologies in the span of a few weeks,
+            quickly entering a position where I offered guidance and answered
+            technical questions for the team.
+          </p>
+          <ul class="skills">
+            <li>Responsive Web Development</li>
+            <li>Teamwork</li>
+            <li>UI Design</li>
+            <li>Project Leadership</li>
+            <li>RESTful APIs</li>
+            <li>React.JS</li>
+          </ul>
+        </div>
+
+        <!-- <div class="topic">
+          <h3>Volunteer Landscape Maintenance</h3>
+          <p>Aberfoyle Public School, summers of 2020 & 2021</p>
+          <p>
+            Maintained school grounds and gardens throughout the summers, going
+            above and beyond to create a clean and visually appealing
+            environment.
+          </p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="content">
+        <h2>Education</h2>
+
+        <div class="topic">
+          <h3>Queen's University - Bcomp-H</h3>
+          <p>Sep 2022 - Apr 2026</p>
+
+          <p>
+            Obtained a Bachelor of Computing (Honors) at Queen's University. 
+            I graduated with distinction, earning a GPA of 3.8 in the top 3%
+            of all stundents under the arts & science faculty. I received the 
+            Principal's entrance scholarship, and participated in the web 
+            development club, the satellite divion of the  Queen's Space 
+            Engineering Team, and the Queen's VEX U Robotics Team.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Centennial CVI</h3>
+          <p>Sep 2018 - Jun 2022</p>
+          <p>
+            Achieved a 95% average + honor roll and participated in the robotics
+            and computer science clubs. I was also awarded the Sharon Dunsmore
+            Scholarship and received the Architectural Design award for quickly
+            learning and creatively utilizing CAD software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="angled-bg tilt-right">
       <div class="content">
         <h2>Projects</h2>
 
@@ -71,11 +168,15 @@
             of winter 2023.
           </p>
           <p>
-            I managed a team of 5 and worked as a full-stack developer and UI/UX
-            designer. Starting with no previous web development experience I
-            learned React.JS and web technologies in the span of a few weeks,
-            quickly entering a position where I offered guidance and answered
-            technical questions for the team.
+            During the project I worked many roles, gaining experience in
+            full-stack development, team management, design, and managing a live
+            deployment. We faced tight deadlines and interpersonal issues, but
+            persevered and prepared a functioning and visually appealing
+            minimum viable product that cleanly handled design elements where we
+            intended to add cut features. The project continues to serve as a 
+            learning grounds, where I apply recent experience to incrementally 
+            add the features that didn't make the cut for demo day and 
+            transition to a robust and scalable architecture.
           </p>
           <ul class="skills">
             <li>React.JS</li>
@@ -93,9 +194,11 @@
           <h3>Iridium - Hobby OS</h3>
           <p>
             A long-running project with the goal of creating an entire operating
-            system from scratch. The project is still in its early stages, but I
-            have learned a great deal about low-level systems programming and the
-            complexity of modern operating systems.
+            system from scratch. Iridium is a microkernel operating system for the 
+            x64 CPU architecture with a unique system API inspired by Google's 
+            <a href="https://fuchsia.dev/">Fuchsia</a> project. This project has 
+            taught a great deal about low-level systems programming and the complexity 
+            of modern operating systems.
           </p>
           <p>
             The project has undergone multiple iterations, with old work
@@ -122,8 +225,8 @@
             social circle throughout the year.
           </p>
           <p>
-            It was built by reverse engineering the API used by the university's
-            own dining website and formatting that data in a Discord-friendly
+            Data is sourced by reverse engineering the API used on the university's
+            own dining hall website, and restructuring in a Discord-friendly
             manner.
           </p>
           <ul class="skills">
@@ -131,95 +234,6 @@
             <li>Problem Solving</li>
             <li>Git</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <div class="content">
-        <h2>Education</h2>
-
-        <div class="topic">
-          <h3>Queen's University - Bcomp-H</h3>
-          <p>Sep 2022 - Apr 2026</p>
-
-          <p>
-            Currently studying for a Bachelor of Computing Honors at Queen's
-            University. I have a 3.9 GPA and received the Principal's entrance
-            scholarship, and participated in the web development club.
-          </p>
-        </div>
-
-        <div class="topic">
-          <h3>Centennial CVI</h3>
-          <p>Sep 2018 - Jun 2022</p>
-          <p>
-            Achieved a 95% average + honor roll and participated in the robotics
-            and computer science clubs. I was also awarded the Sharon Dunsmore
-            Scholarship and received the Architectural Design award for quickly
-            learning and creatively utilizing CAD software.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="angled-bg tilt-right">
-      <div class="content">
-        <h2>Experience</h2>
-        <div class="topic">
-          <h3>Web Developer</h3>
-          <p>Coldwell Banker Neumann Real Estate Brokerage, August 2023 & Summer 2024</p>
-          <p>
-            Developed and maintained websites for the brokerage and many real estate agents.
-          </p>
-          <p>
-            I primarily used the Duda website builder, and applied in-depth knowledge of CSS to 
-            create custom design elements. The websites I created were performant and optimized 
-            for search engines. I utilized generative AI for copywriting, generating marketing material, 
-            and to quickly draft effective websites. Alongside web development, I also assisted 
-            in marketing tasks such as graphic design and writing SEO-tailored articles. Additionally, 
-            I created custom integrations with outside services, utilized Google Search Console to 
-            track the effectiveness of SEO strategies, and managed domains, DNS records, and hosting.
-          </p>
-          <ul class="skills">
-            <li>HTML/CSS</li>
-            <li>Duda Website Builder</li>
-            <li>SEO</li>
-            <li>Javascript</li>
-            <li>Graphic Design</li>
-            <li>Wordpress</li>
-            <li>Generative AI</li>
-            <li>DNS</li>
-          </ul>
-        </div>
-
-        <div class="topic">
-          <h3>QWeb Web Development Sprint</h3>
-          <p>Queen's University, Mar 2023</p>
-          <p>
-            Developed a forum website as part of a team, as described in the
-            <a href="#projects">projects</a> list.
-          </p>
-          <p>
-            During the project I worked many roles, gaining experience in
-            full-stack development, team management, design, and managing a live
-            deployment. We faced tight deadlines and interpersonal issues, but
-            persevered and prepared a functioning and visually appealing
-            minimum viable product that cleanly handled elements where we
-            intended to add new features. Throughout the summer I am continuing
-            to polish the website and incrementally add the features that didn't
-            make the cut for the demo day.
-          </p>
-        </div>
-
-        <div class="topic">
-          <h3>Volunteer Landscape Maintenance</h3>
-          <p>Aberfoyle Public School, summers of 2020 & 2021</p>
-          <p>
-            Maintained school grounds and gardens throughout the summers, going
-            above and beyond to create a clean and visually appealing
-            environment.
-          </p>
         </div>
       </div>
     </section>
