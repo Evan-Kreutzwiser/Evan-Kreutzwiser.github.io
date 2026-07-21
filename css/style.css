@@ -54,6 +54,7 @@ nav {
   align-items: center;
   height: 100%;
 }
+
 .Nav-links a:hover {
   text-decoration: underline;
 }
@@ -64,11 +65,13 @@ nav {
   right: 0;
   bottom: 0;
 }
+
 .github a {
   font-size: 3.5rem;
   text-decoration: none;
   margin: 10px;
 }
+
 .github a:hover {
   color: white;
 }
@@ -96,15 +99,17 @@ nav {
   border-radius: 8px;
   padding: 4px 8px;
   cursor: pointer;
-  position:fixed;
+  position: fixed;
   top: 8px;
   right: 18px;
   display: none;
 }
+
 #Menu-button:active {
   background-color: #62a0fe49;
   box-shadow: 0 0 16px #62a0fe49;
 }
+
 @media (max-width: 652px) {
   .Nav-links a:not(:first-child) {
     display: none;
@@ -137,15 +142,20 @@ h1 {
   font-size: 2.5rem;
   text-shadow: 0 0 12px #eeea;
 }
+
 .caret {
   animation: 1.5s blink step-end infinite;
   text-shadow: 0 0 12px #eeea;
   user-select: none;
 }
+
 @keyframes blink {
-  from, to {
+
+  from,
+  to {
     visibility: hidden;
   }
+
   50% {
     visibility: visible;
   }
@@ -155,6 +165,7 @@ h1 {
   html {
     scroll-behavior: unset;
   }
+
   .caret {
     animation: none;
   }
@@ -203,13 +214,17 @@ section {
 }
 
 .content {
+  scroll-margin-top: 3.5em;
   width: 100%;
   max-width: 100ch;
   margin: auto;
+  padding: 24px 0;
 }
 
-.topic {
-  padding: 24px 0;
+.content img {
+  margin-bottom: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
 #about {
@@ -251,25 +266,76 @@ section {
   }
 }
 
-.skills {
+#overview {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  width: 100%;
-  padding: 24px 24px 12px;
+  flex-direction: row;
+  gap: 24px;
+  padding: 32px 0;
 }
-.skills p {
-  font-size: 1em;
-  margin: 0;
-  align-self: center;
+
+#overview a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  border-radius: 32px;
 }
-.skills li {
+
+#overview li {
+  list-style: none;
   display: block;
-  border-radius: 16px;
-  font-size: 0.833em;
-  padding: 4px 16px;
-  background-color: #62a0fe49;
-  box-shadow: 0 0 16px #62a0fe49;
+  width: min(30ch, 100%);
+}
+
+.card {
+  border: 2px solid #749bff;
+  border-radius: 32px;
+  box-shadow: 0 0 8px 1px #62a1feaa;
+  background-color: #06121e;
+  padding: 24px;
+  flex-grow: 1;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 12px 3px #62a1feaa;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+h2 {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
+
+figure {
+  margin: 24px 0;
+}
+
+.github-link {
+  margin-left: 1.5ch;
+  font-size: 1.5em;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.github-link:hover {
+  color: #81c0ff;
 }
 
 a {
@@ -290,6 +356,7 @@ a {
   line-height: 2em;
   display: block;
 }
+
 #contact-info li::before {
   font: var(--fa-font-solid);
   width: 1em;
